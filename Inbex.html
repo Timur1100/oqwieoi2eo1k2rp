@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<main class="login">
+
+
+<div class="karta">
+
+<h3>Sign Up</h3>
+        
+        <form id="signup" method="get" action="#">
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit"  id="buttton">Create Account</button>
+        </form>
+        
+ <p>Already have an account? <a href="#">   Sign in </a></p>
+
+</div>
+
+
+</main>
+
+<script>
+const colors = [
+    "#523634",
+    "#6e6702",
+    "#c05805",
+    "#db9501",
+    "#882426",
+    "#cdbea7",
+    "#323030",
+    "#003b46",
+    "#07575b",
+    "#66a5ad",
+    "#c4dfe6",
+];
+
+let index= 0;
+
+setInterval(() => { index = (index + 1) % colors.length;
+                   document.body.style.setProperty(
+                      "--glow", colors[index]
+                                               );
+             }, 1500);
+
+const Signup = document.getElementById("signup");
+
+Signup.addEventListener("submit",function(event) {
+    alert("Thank you for submitted!")
+})
+  
+
+
+
+</script>
+</body>
+</html>

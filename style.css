@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101412;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.login {
+     display: flex;
+    align-items: center;
+    width: 30vh;
+    
+}
+
+.karta {
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   gap: 2vh;
+   border: 1px solid rgb(78, 73, 73);
+   width: 100%;
+   padding: 30px;
+   border-radius: 15px;
+   height:350px;
+    box-shadow: 0 0 30px var(--glow);
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    
+}
+
+.karta input {
+    background-color: #202422;
+    border: 1px solid #444;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    color: white;
+}
+
+.karta h3 {
+    color: white;
+    position: relative;
+    left: -55px;
+    font-size: 25px;
+}
+
+.karta button {
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    color: white;
+    background-color: #444;
+    background: var(--glow);
+}
+
+.karta p {
+    color: #444;
+    font-size: 13px;
+    
+}
+
+body {
+    --glow: #301b28;
+}
+
+.karta p a {
+    text-decoration: none;
+
+}
+
+@property --glow {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #523634;
+}
+
+body {
+    --glow: #523634;
+    transition: --glow 1s;
+}
