@@ -75,7 +75,7 @@ body {
 }
 
 body {
-    --glow: #301b28;
+    --glow: #42D9FF;
 }
 
 .karta p a {
@@ -86,10 +86,10 @@ body {
 @property --glow {
     syntax: "<color>";
     inherits: true;
-    initial-value: #523634;
+    initial-value: #42D9FF;
 }
 
 body {
-    --glow: #523634;
+    --glow: #42D9FF;
     transition: --glow 1s;
 }
